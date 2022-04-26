@@ -24,7 +24,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700;900&display=swap" rel="stylesheet">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./CSS/header.css">
+  <link rel="stylesheet" href="./CSS/navbar.css">
 </head>
 <body>
   <div id="wrap">
@@ -33,42 +35,47 @@
       <div id="top-message">
         <a href="#">
           지금 가입하고 인기상품 <b>100원</b> 에 받아가세요!
-          <button id="top-message-arrow"></button>
+          <img src="./img/arrow.webp" id="top-message-arrow" />
           <button id="top-message-close"></button>
         </a>
       </div>
 
       <div id="header">
-        <div class="delivery-info">
+        <div class="delivery-info left">
           <a href="#">
-            <img src="#" alt="샛별, 택배 배송 안내">
+            <img src="./img/delivery.webp" alt="샛별, 택배 배송 안내">
           </a>
         </div>
 
-        <div id="header-logo">
-          <h1 class="logo">
-            <a href="#"><img src="#" alt="Logo"></a>
-          </h1>
-        </div>
-
-        <div id="userMenu">
-          <ul class="list_menu">
-            <li class="menu"><a href="#" class="link_menu">회원가입</a></li>
-            <li class="menu"><a href="#" class="link_menu">로그인</a></li>
-            <li class="menu">
-              <a href="#" class="link_menu">고객센터</a>
-              <ul class="sub">
-                <li><a href="#">공지사항</a></li>
-                <li><a href="#">자주하는 질문</a></li>
-                <li><a href="#">1:1 문의</a></li>
-                <li><a href="#">대량주문 문의</a></li>
-                <li><a href="#">상품 제안</a></li>
-                <li><a href="#">에코포장 피드백</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+        <ul id="userMenu" class="right">
+          <li class="menu-item">
+            <a href="#" class="link_menu">회원가입</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="link_menu">로그인</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="link_menu">고객센터</a>
+            <button id="downBtn"></button>
+            <ul class="sub-links">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">자주하는 질문</a></li>
+              <li><a href="#">1:1 문의</a></li>
+              <li><a href="#">대량주문 문의</a></li>
+              <li><a href="#">상품 제안</a></li>
+              <li><a href="#">에코포장 피드백</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
+
+
+      <div id="logo-box" class="clear">
+        <h1 id="logo">
+          <a href="#"><img src="./img/logo.webp" alt="Logo"></a>
+        </h1>
+      </div>
+
 
       <div id="menu">
         <nav class="menu">

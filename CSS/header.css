@@ -1,0 +1,120 @@
+#top-message a {
+  display: block;
+  /* width: 100vw; */
+  min-width: 1050px;
+  height: 42px;
+
+  background-color: #5F0080;
+  
+  font-size: 14px;
+  line-height: 42px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+#top-message-arrow {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+
+  /* 상단부 고정 */
+  vertical-align: top;
+  
+  cursor: pointer;
+}
+
+#top-message-close {
+  width: 42px;
+  height: 42px;
+
+  position: absolute;
+  right: 0;
+
+  background-image: url(../img/close.webp);
+  background-color: transparent;
+  
+  vertical-align: top;
+  /* ! 1050px 이하로 사라지게.. */
+}
+
+#header, #logo-box {
+  width: 1050px;
+  height: 37px;
+
+  margin: 0 auto;
+}
+
+#header .delivery-info a img {
+  height: 22px;
+  margin: 7.5px 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#userMenu {
+  display: flex;
+  font-weight: 500;
+}
+
+#userMenu .menu-item:nth-child(1):after, .menu-item:nth-child(2):after {
+  content: "";
+  float: right;
+  margin-top: 11px;
+  width: 1px;
+  height: 13px;
+  background-color: #d8d8d8;
+}
+
+#userMenu .menu-item:last-child {
+  position: relative;
+}
+
+#userMenu .link_menu {
+  display: inline-block;
+  height: 37px;
+
+  padding: 0 12px;
+
+  font-size: 12px;
+
+  color: #333333;
+  text-align: center;
+  line-height: 35px;
+}
+
+#userMenu #downBtn {
+  width: 8px;
+  height: 5px;
+  position: absolute;
+  right: 0;
+  top: 14px;
+  background-image: url(../img/downBtn.webp);
+}
+
+#userMenu .link_menu:hover {
+  color: #5F0080;
+}
+
+#userMenu .sub-links {
+  display: none;
+}
+
+#logo-box {
+  min-width: 1050px;
+  height: 79px;
+  position: relative;
+}
+
+#logo {
+  width: 100%;
+  height: 79px;
+
+  position: absolute;
+  top: -27px;
+  
+  text-align: center;
+}
+
+#logo a img {
+  height: 79px;
+}
