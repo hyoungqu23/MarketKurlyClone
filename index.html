@@ -81,8 +81,11 @@
         <nav class="menu">
           <ul class="main-menu">
             <li class="main-menu-item">
-              <a href="#">전체 카테고리</a>
-              <ul class="sub-menu">
+              <a href="#">
+                <span id="bars"></span>
+                전체 카테고리
+              </a>
+              <ul class="sub-menu hidden">
                 <li class="sub-menu-item">
                   <a href="#">2022 감사의 달</a>
                   <ul class="items">
@@ -384,43 +387,39 @@
         </nav>
 
         <div class="search-bar">
-          <form action="#" class="search-bar">
-            <input type="text" placeholder="검색어를 입력해주세요.">
-            <button type="button" class="search-button"></button>
-          </form>
+          <input id="search-input" type="text" placeholder="검색어를 입력해주세요.">
+          <button type="button" id="search-button"><img src="./img/search.webp" alt="" width="30px" height="30px"></button>
         </div>
 
-        <div class="icons">
-          <ul>
-            <li>
-              <a href="#">
-                <img src="#" alt="배송지 입력">
-                <div class="popup">
-                  <p><span>배송지를 등록</span>하고 구매 가능한 상품을 확인하세요!</p>
-                  <button>로그인</button>
-                  <button><img src="#" alt="주소 검색">주소 검색</button>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="#" alt="관심있는 상품">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="#" alt="장바구니">
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="icons">
+          <li>
+            <a href="#">
+              <img src="./img/address.svg" alt="배송지 입력">
+              <div class="popup hidden">
+                <p><span>배송지를 등록</span>하고 구매 가능한 상품을 확인하세요!</p>
+                <button>로그인</button>
+                <button><img src="./img/search2.webp" alt="주소 검색">주소 검색</button>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/heart.svg" alt="관심있는 상품">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/cart.svg" alt="장바구니">
+            </a>
+          </li>
+        </ul>
       </div>
 
       <div id="main">
         <section class="quick-menu">
           <div class="quick-image">
             <a href="#">
-              <img src="#" alt="quick-menu" />
+              <img src="./img/quickmenu.webp" alt="quick-menu" />
             </a>
           </div>
   

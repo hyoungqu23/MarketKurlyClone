@@ -27,6 +27,11 @@ ul, ol {
   padding: 0;
 }
 
+/* Hidden */
+.hidden {
+  display: none;
+}
+
 /* Float */
 .left {
   float: left;
