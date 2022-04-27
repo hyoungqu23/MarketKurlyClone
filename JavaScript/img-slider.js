@@ -2,11 +2,10 @@
 const SLIDER = document.querySelector(".slide-wrapper")
 const IMAGE = document.querySelectorAll(".slide-item");
 let intervalId;
-let currentImg = 0;
+var currentImg = 0;
+let stopImg = 0;
 
-moveLeft(0);
-
-function moveLeft(currentImg) {
+function moveLeft() {
   intervalId = setInterval(() => {
     let from = -(innerWidth * currentImg);
     let to = from - innerWidth;
@@ -25,20 +24,15 @@ function moveLeft(currentImg) {
     if (currentImg === (IMAGE.length - 1)) {
       currentImg = 0;
     }
-
-  }, 2000)
-  let stopImg = 0;
-
-  SLIDER.addEventListener("mouseover", () =>{
-    clearInterval(intervalId);
-    stopImg = currentImg;
-    
-    SLIDER.addEventListener("mouseleave", () =>{
-      moveLeft(stopImg);
-    })
-  })
+  }, 3000);
 }
 
+function stopSlide() {
+  clearInterval(intervalId);
+}
 
+moveLeft();
 
+SLIDER.addEventListener("mouseover", stopSlide);
 
+SLIDER.addEventListener("mouseleave", moveLeft);
