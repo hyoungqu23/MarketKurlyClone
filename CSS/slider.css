@@ -1,0 +1,12 @@
+div.slide-wrapper {
+  margin: 0 auto;
+  display: flex;
+}
+
+div.slide-item a {
+  display: block;
+  width: 100vw;
+  height: 370px;
+  background-position: 50% center;
+  background-size: cover;
+}
