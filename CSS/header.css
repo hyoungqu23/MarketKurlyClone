@@ -8,6 +8,7 @@
   
   font-size: 14px;
   line-height: 42px;
+  letter-spacing: -0.6px;
   color: #FFFFFF;
   text-align: center;
 }
@@ -35,6 +36,10 @@
   
   vertical-align: top;
   /* ! 1050px 이하로 사라지게.. */
+}
+
+#top-header {
+  height: 156px;
 }
 
 #header, #logo-box {
@@ -101,7 +106,7 @@
 
 #logo-box {
   min-width: 1050px;
-  height: 79px;
+  height: 67px;
   position: relative;
 }
 
