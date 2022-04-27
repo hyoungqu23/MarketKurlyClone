@@ -1,11 +1,13 @@
 // img move function
-function moveLeft() {
-  const SLIDER = document.querySelector(".slide-wrapper")
-  const IMAGE = document.querySelectorAll(".slide-item");
-  
-  let currentImg = 0;
+const SLIDER = document.querySelector(".slide-wrapper")
+const IMAGE = document.querySelectorAll(".slide-item");
+let intervalId;
+let currentImg = 0;
 
-  setInterval(() => {
+moveLeft(0);
+
+function moveLeft(currentImg) {
+  intervalId = setInterval(() => {
     let from = -(innerWidth * currentImg);
     let to = from - innerWidth;
 
@@ -25,6 +27,18 @@ function moveLeft() {
     }
 
   }, 2000)
+  let stopImg = 0;
+
+  SLIDER.addEventListener("mouseover", () =>{
+    clearInterval(intervalId);
+    stopImg = currentImg;
+    
+    SLIDER.addEventListener("mouseleave", () =>{
+      moveLeft(stopImg);
+    })
+  })
 }
 
-moveLeft();
+
+
+
