@@ -17,6 +17,10 @@
   text-align: center;
 }
 
+#menu .main-menu-item:hover {
+  color: #5F0080;
+}
+
 #menu .main-menu-item:first-child {
   width: 148px;
 }
