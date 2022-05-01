@@ -6,6 +6,10 @@ const showList = () => {
   subList.classList.remove('hidden');
 }
 
+const hideList = () => {
+  subList.classList.add('hidden');
+}
 
-csCenter.addEventListener('hover', showList);
-downBtn.addEventListener('hover', showList);
+csCenter.addEventListener('mouseover', showList);
+
+csCenter.addEventListener('mouseleave', hideList);
