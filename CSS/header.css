@@ -57,6 +57,7 @@
 }
 
 #userMenu {
+  z-index: 9999999999;
   display: flex;
   font-weight: 500;
 }
@@ -101,9 +102,8 @@
 }
 
 #userMenu .sub-links {
-  z-index: 1000000;
   width: 102px;
-  height: 34px;
+  height: 152px;
   padding: 3px 9px;
   background-color: #FFFFFF;
   border: 1px solid #dddddd;
@@ -111,7 +111,14 @@
   top: 34px;
   font-size: 12px;
   line-height: 2em;
-  box-shadow: 4px 4px 4px 12px;
+}
+
+#userMenu .sub-links li a {
+  display: block;
+}
+
+#csCenter {
+  z-index: 100000;
 }
 
 #userMenu .sub-links.hidden {

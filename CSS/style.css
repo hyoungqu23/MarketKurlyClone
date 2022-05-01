@@ -49,3 +49,7 @@ ul, ol {
 .clear {
   clear: both;
 }
+
+.grid { 
+  display: grid;
+}
