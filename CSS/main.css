@@ -9,7 +9,6 @@ section.recommend-items {
   position: relative;
   width: 100%;
   max-width: 1050px;
-  height: 400px;
   margin: 0 auto;
   color: #000000;
   padding: 32px 0 40px 0;
@@ -38,14 +37,16 @@ section.recommend-items .recommend-slide-item {
 
 div.leftBtn.items, div.rightBtn.items {
   top: 310px;
+  z-index: 100000;
+  display: none;
 }
 
 div.leftBtn.items {
-  left: -20px;
+  left: -15px;
 }
 
 div.rightBtn.items {
-  right: -20px;
+  right: -15px;
 }
 
 div.item-img {
