@@ -34,7 +34,7 @@ ul, ol {
 
 /* Hidden */
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 /* Float */
@@ -52,4 +52,13 @@ ul, ol {
 
 .grid { 
   display: grid;
+}
+
+/* BTN */
+div.leftBtn {
+  background-image: url(../img/leftArrow.svg);
+}
+
+div.rightBtn {
+  background-image: url(../img/rightArrow.svg) ;
 }

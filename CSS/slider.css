@@ -24,12 +24,12 @@ div.leftBtn, div.rightBtn {
   border-radius: 50%;
 }
 
-div.leftBtn {
+div.leftBtn.slide {
   left: 150px;
   background-image: url(../img/leftArrow.svg);
 }
 
-div.rightBtn {
+div.rightBtn.slide {
   right: 150px;
   background-image: url(../img/rightArrow.svg) ;
 }
