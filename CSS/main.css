@@ -38,7 +38,7 @@ section.recommend-items .recommend-slide-item {
 div.leftBtn.items, div.rightBtn.items {
   top: 310px;
   z-index: 100000;
-  display: none;
+  /* display: none; */
 }
 
 div.leftBtn.items {
@@ -68,15 +68,31 @@ h3.item-name {
 
 p.current-price {
   font-weight: 900;
+  letter-spacing: -0.8px;
 }
 
 span.discount-rate {
   color: #ff0000;
   font-weight: 900;
+  letter-spacing: -0.8px;
 }
 
 p.regular-price {
   font-size: 14px;
   color: #999999;
   text-decoration: line-through;
+  letter-spacing: -0.8px;
 }
+
+#advertise div {
+  width: 100%;
+  max-width: 1050px;
+  height: 140px;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+}
+
+#advertise div.img1 {background-image: url('../img/ads_1.webp')}
+#advertise div.img2 {background-image: url('../img/ads_2.webp')}
+#advertise div.img3 {background-image: url('../img/ads_3.webp')}

@@ -3,15 +3,15 @@ const SLIDERS = document.querySelectorAll('.recommend-slide-items');
 const leftItemBtn = document.querySelector('.leftBtn.items');
 const rightItemBtn = document.querySelector('.rightBtn.items');
 
-slideSection.addEventListener('mouseenter', () => {
-  leftItemBtn.style.display = 'block';
-  rightItemBtn.style.display = 'block';
-})
+// slideSection.addEventListener('mouseenter', () => {
+//   leftItemBtn.style.display = 'block';
+//   rightItemBtn.style.display = 'block';
+// })
 
-slideSection.addEventListener('mouseleave', () => {
-  leftItemBtn.style.display = 'none';
-  rightItemBtn.style.display = 'none';
-})
+// slideSection.addEventListener('mouseleave', () => {
+//   leftItemBtn.style.display = 'none';
+//   rightItemBtn.style.display = 'none';
+// })
 
 let currIndex = 0;
 
