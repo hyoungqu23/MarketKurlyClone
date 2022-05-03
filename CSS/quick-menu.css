@@ -1,9 +1,10 @@
 #quick-menu {
   width: 80px;
   position: fixed;
-  z-index: 1;
+  z-index: 10000;
   right: 20px;
-  bottom: 30px;
+  top: 512px;
+  transition: top 1s 0.1s ease;
 }
 
 #quick-menu .quick-image a {

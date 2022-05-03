@@ -5,6 +5,7 @@ div.slide-section {
 div.slide-wrapper {
   margin: 0 auto;
   display: flex;
+  overflow: hidden;
 }
 
 div.slide-item a {
