@@ -65,9 +65,17 @@ ul.about-list li {
   color: #999999;
 }
 
+ul.list-sns {
+  padding-top: 45px;
+  display: flex;
+  flex-direction: row;
+}
+
+
 .footer-bottom {
   margin: 0 auto;
   width: 1050px;
-  font-size: 10px;
+  height: 800px;
+  font-size: 12px;
   text-align: center;
 }
