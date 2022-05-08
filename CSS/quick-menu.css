@@ -1,9 +1,9 @@
 #quick-menu {
   width: 80px;
-  position: fixed;
+  position: absolute;
   z-index: 10000;
+  top: 720px;
   right: 20px;
-  top: 512px;
   transition: top 1s 0.1s ease;
 }
 

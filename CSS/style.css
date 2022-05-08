@@ -17,6 +17,7 @@ body {
 
 #container {
   width: 100vw;
+  position: relative;
 }
 
 /* RESET Style */
