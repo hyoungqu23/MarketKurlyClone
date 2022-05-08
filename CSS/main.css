@@ -49,12 +49,20 @@ div.rightBtn.items {
   right: -15px;
 }
 
-div.item-img {
-  max-width: 100%;
+div.item-img-container {
   width: 250px;
   height: 320px;
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
+}
+
+img.item-img {
+  width: 250px;
+  height: 320px;
+}
+
+img.item-img:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
 }
 
 h3.item-name, p.current-price {
@@ -142,18 +150,28 @@ div.today-timer p {
 div.today-item {
   width: 356px;
   height: 535px;
-
 }
 
 div.today-wrapper {
   padding: 10px;
 }
 
-div.today-img {
+div.today-img-container {
   width: 338px;
   height: 434px;
-  background-size: cover;
   margin-bottom: 15px;
+  overflow: hidden;
+}
+
+img.today-img {
+  width: 338px;
+  height: 434px;
+  margin-bottom: 15px;
+}
+
+img.today-img:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
 }
 
 p.today-desc {
