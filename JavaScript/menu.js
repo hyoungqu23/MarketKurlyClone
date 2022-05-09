@@ -8,3 +8,15 @@ menuItems[0].addEventListener('mouseover', () => {
 menuItems[0].addEventListener('mouseleave', () => {
   subMenu[0].classList.add('hidden');
 })
+
+const anchor = document.querySelectorAll('.sub-menu-item > a');
+
+for (let i = 0; i < anchor.length; i++) {
+  anchor[i].addEventListener('mouseover', (e) => {
+    e.target.parentNode.childNodes[5].classList.toggle('hidden2');
+  })
+
+  anchor[i].addEventListener('mouseleave', (e) => {
+    e.target.parentNode.childNodes[5].classList.toggle('hidden2');
+  })
+}
