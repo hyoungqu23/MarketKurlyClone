@@ -63,3 +63,15 @@ div.leftBtn {
 div.rightBtn {
   background-image: url(../img/rightArrow.svg) ;
 }
+
+div.scrollTop {
+  width: 58px;
+  height: 58px;
+  
+  overflow: hidden;
+  position: fixed;
+  right: 31px;
+  bottom: -58px;
+
+  transition: all .5s;
+}
