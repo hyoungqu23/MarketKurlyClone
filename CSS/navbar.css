@@ -10,6 +10,14 @@
   margin: 0 auto;
 }
 
+.stickyToTop {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  background-color: #fff;
+  z-index: 10000000;
+}
+
 .hidden2 {
   display: none;
 }
@@ -126,7 +134,12 @@ div.search-bar {
   color: #666666;
   outline: none;
   line-height: 16px;
-  padding: 0 60px 0 14px;
+  padding: 0 60px 0 20px;
+  z-index: 10000;
+}
+
+#search-input:focus {
+  color:#fff;
 }
 
 #search-button {
@@ -136,6 +149,50 @@ div.search-bar {
   position: absolute;
   right: 5px;
   top: 2px;
+}
+
+div.popup {
+  width: 350px;
+  height: 150px;
+  z-index: 1000;
+  background-color: #fff;
+  position: absolute;
+  top: 200px;
+  left: 950px;
+  border: 1px solid #f7f7f7;
+  padding: 20px;
+}
+
+div.popup > p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+div.popup > p > span {
+  color: #5F0080;
+}
+
+div.popup button {
+  width: 120px;
+  height: 40px;
+}
+
+div.popup button.login {
+  background-color: #fff;
+  border: 1px solid #5F0080;
+  border-radius: 5px;
+}
+
+div.popup button.address-search {
+  color: #fff;
+  background-color: #5F0080;
+  border: 1px solid #5F0080;
+  border-radius: 5px;
+}
+
+div.popup button img {
+  width: 20px;
+  height: 20px;
 }
 
 ul.icons {
